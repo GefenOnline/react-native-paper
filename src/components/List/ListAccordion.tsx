@@ -187,7 +187,7 @@ const ListAccordion = ({
       : handlePressAction;
   return (
     <View>
-      <View style={{ backgroundColor: theme.colors.background }}>
+      <View>
         <TouchableRipple
           style={[styles.container, style]}
           onPress={handlePress}
@@ -248,7 +248,7 @@ const ListAccordion = ({
               ) : (
                 <MaterialCommunityIcon
                   name={isExpanded ? 'chevron-up' : 'chevron-down'}
-                  color={titleColor}
+                  color={'#767676'}
                   size={24}
                   direction={I18nManager.isRTL ? 'rtl' : 'ltr'}
                 />
